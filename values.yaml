@@ -1,0 +1,10 @@
+ingress:
+  enabled: true
+  hosts:
+  - name: sonar.cmays-lab.com
+  tls:
+  - hosts:
+      - sonar.cmays-lab.com
+    secretName: sonar-cert
+persistence:
+  enabled: true
