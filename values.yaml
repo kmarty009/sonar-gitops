@@ -1,4 +1,6 @@
 sonarqube:
+  image:
+    pullPolicy: IfNotPresent
   ingress:
     enabled: true
     hosts:
