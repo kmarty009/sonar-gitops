@@ -9,5 +9,8 @@ sonarqube:
     - hosts:
         - sonar.cmays-lab.com
       secretName: sonar-cert
+    annotations: {
+      external-dns.alpha.kubernetes.io/hostname: sonar.cmays-lab.com
+    }
   persistence:
     enabled: true
