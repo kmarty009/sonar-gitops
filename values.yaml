@@ -1,5 +1,5 @@
 sonarqube:
-  replicaCount: 1
+  replicaCount: 3
   image:
     pullPolicy: IfNotPresent
   ingress:
